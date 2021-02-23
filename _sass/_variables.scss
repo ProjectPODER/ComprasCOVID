@@ -1,0 +1,89 @@
+// This is the place to place Bootstrap's variables overrides.
+
+// Color system
+
+// stylelint-disable
+
+$gray-100: #d9dada !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+// Text colors
+$black:    #1e1e1e !default;
+$gray-text:#5b5b5f;   
+
+// Primary colors
+$white:   #fff !default;
+$blue:    #009fae !default;
+$red:     #cb2c30 !default;
+
+// Complementary colors
+$gray-c:  #d9dada;
+$blue-c:  #7fcfd6;
+$red-c:   #de6669;
+$green:   #77ab59;
+$yellow:  #ffdc71;
+$orange:  #ffad60;
+
+// Background colors
+$bg-red:    #FBECED;
+$bg-blue:   #E4F5F6;
+$bg-gray:   #F4F4F4;
+$bg-navbar: #d9dada;
+
+
+
+$primary:       $blue !default;
+$secondary:     $red !default;
+$success:       $green !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+
+
+//Home background image
+//You need to change only the name and the type of your image
+//For example:./img/your-image.png 
+$bgHome: "./img/PORTADA-ARTEFINAL.png";
+$bgHomeBolivia: "./img/BOLIVIA.jpg";
+$bgHomeCostaRica: "./img/COSTARICA.jpg";
+$bgHomeEcuador: "./img/ECUADOR.jpg";
+$bgHomeGuatemala: "./img/GUATEMALA.jpg";
+$bgHomeMexico: "./img/MEXICO.jpg";
+$bgHomePeru: "./img/PERU.jpg";
+$complementBg: "./img/complement-bg.png";
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                $red !default;
+$link-decoration:           none !default;
+$link-hover-color:          darken($link-color, 15%) !default;
+$link-hover-decoration:     underline !default;
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+// stylelint-enable value-keyword-case
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base * 1.25) !default;
+$font-size-sm:                ($font-size-base * .875) !default;
+
+// Preloader colors
+$preloader-color1: #1ee6d3;
+$preloader-color2: #343a40;
+$preloader-color3: $red;

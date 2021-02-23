@@ -1,0 +1,18 @@
+@media (max-width: 767px) {
+    .header-card {
+		display: block !important;
+	}
+}
+
+article section {
+	font-family: 'Merriweather', serif;
+}
+
+.image-post {
+	text-align: center;
+
+	img {
+		max-width: 95%;
+		height: auto;
+	}
+}

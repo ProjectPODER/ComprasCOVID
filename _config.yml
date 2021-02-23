@@ -1,0 +1,115 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: VivirConVIH América Latina
+# Logo image
+image: logo-vih.png
+
+#Description of your site
+description: >-
+  Tan sólo 1,3 millones de las 2,1 millones de personas que fueron diagnosticadas como portadoras del VIH en América Latina tienen acceso a tratamiento. Esta situación se está agravando por la nueva pandemia global de la covid-19 según el análisis y reporteo realizado por PODER y Salud con Lupa.
+
+# URL of your contracts file or API endpoint
+contracts_url: "/assets/data/vih_todos.csv"
+#contracts_url: "https://api.beta.quienesquien.wiki/v2/contracts?sort=-compiledRelease.total_amount&compiledRelease.parties.memberOf.name=%2FGrupo%20Aeroportuario%2Fi&debug=true&limit=614"
+
+
+# URL of your beneficial ownership file or API endpoint
+bods_url: ""
+
+graph:
+  # The name of your graphic
+  - title: "Graphic name"
+  # los tamaños minimos y maximos de los nodos (en pixeles, aproximativo)
+  - sizes:
+    - min: 10
+    - max: 300
+  # colores de nodos y connectores
+  - colours:
+      - nodes:
+          - default: '#1ee6d3'
+          - contract: '#1ee6d3'
+          - contractTypes: '#3abdc3'
+          - contractByType: '#438a9c'
+          - organization: '#3c5a6f'
+          - shareholderPerson: '#EB639A'
+      - links:
+          - default: '#706F74'
+          - contractsTypes: '#706F74'
+          - toCenter: '#706F74'
+          - toContractType: '#706F74'
+          - toOrganization: '#706F74'
+
+  #Format of the contracts_url: releases_json, records_json_api, csv
+  # releases_json: {releases: [] }
+  # records_json_api: {data: { records: [ {compiledRelease: {} }] } }
+  # csv: a csv file
+  - contracts_format: "csv"
+
+# Customize the More information menu button title
+menu_button_title: Más información
+
+# Customize the titles and placeholder inputs in Contracts page
+contracts_title: Buscador de compras 2017-2019
+search_title: Búsqueda
+search_placeholder: Introduce palabra clave a buscar
+amount_title: Monto total (en USD)
+amount_from_placeholder: Desde $
+amount_to_placeholder: hasta $
+type_contract_title: Tipo de contratación
+type_contract_title_tooltip: La ley obliga a la Unidad Compradora a definir el tipo de contratación, ya que varían las normas en cada caso.
+type_contract_all_option: Todo
+type_procedure_title: Tipo de procedimiento
+type_procedure_title_tooltip: La licitación pública es según la ley mexicana el procedimiento adecuado para contratar obra publica. Excepcionalmente también se pueden realizar otro tipo de procedimientos como adjudicación directa, convenio e invitación a cuando menos tres proveedores.
+type_procedure_all_option: Todo
+date_range_title: Rango de fechas
+date_range_from_placeholder: Desde
+date_range_to_placeholder: hasta
+date_range_title_tooltip: Encuentra los contratos activos entre dos fechas.
+type_country_title: País
+type_country_all_option: Todos
+filter_footnote_title: Los filtros aplican sobre los contratos que tienen las empresas.
+# Customize the Contract table titles
+column_1: Empresas 
+column_2: Cant. de contratos
+column_3: Monto total
+column_4: País
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - docs/
+
+# Collections
+collections_dir: collections
+collections:
+  first-slider:
+    output: true
+  visualization-slider:
+    output: true
+
+# Set to false to hide excerpts on the posts page
+show_excerpts: true
+future: true

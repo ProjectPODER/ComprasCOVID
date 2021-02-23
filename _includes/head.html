@@ -1,0 +1,40 @@
+<head>
+ <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <meta property="og:title" content="VivirConVIH América Latina">
+  <meta property="og:image" content="https://vivirconvih.org/assets/img/PORTADA-ARTEFINAL.png"/>
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VivirConVIH América Latina">
+  <meta name="twitter:text:title" content="VivirConVIH América Latina">
+  <meta name="twitter:description" content="Tan sólo 1,3 millones de las 2,1 millones de personas que fueron diagnosticadas como portadoras del VIH en América Latina tienen acceso a tratamiento. Esta situación se está agravando por la nueva pandemia global de la covid-19 según el análisis y reporteo realizado por PODER y Salud con Lupa.">
+  <meta name="twitter:image" content="https://vivirconvih.org/assets/img/PORTADA-ARTEFINAL.png">
+  <meta name="twitter:url" contnet="https://vivirconvih.org/">
+
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="shortcut icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="{{ "/assets/javascript/fullpage.js/dist/jquery.fullpage.min.css" | relative_url }}">
+  {%- feed_meta -%}
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,800|Quicksand:300,400,500,700" rel="stylesheet" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" rel="stylesheet"> 
+  <script src="{{ "/assets/javascript/bootstrap/jquery.min.js" | relative_url }}"></script>
+  <script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
+  <script src="{{ "/assets/javascript/fullpage.js/dist/jquery.fullpage.js" | relative_url }}"></script>
+  <script src="{{ "/assets/javascript/d3/d3.js" | relative_url }}"></script>
+  <script src="{{ "/assets/javascript/main.js" | relative_url }}"></script>
+  <script>
+    window.graphConfig = {{ site.graph | jsonify }};
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130129701-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'UA-130129701-1');
+  </script>
+</head>
